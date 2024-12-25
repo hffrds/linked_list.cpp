@@ -1,9 +1,9 @@
 // 非链表方法移除链表元素
 设置虚拟头节点dummmpy
 
-    // 设计链表
-    要设置虚拟头节点，对于改变头节点的方法，遍历指针要指向虚拟头节点，其余的指向head即可 class MyLinkedList
-{
+// 设计链表
+要设置虚拟头节点，对于改变头节点的方法，遍历指针要指向虚拟头节点，其余的指向head即可 
+class MyLinkedList{
 public:
     struct ListNode
     {
@@ -93,9 +93,9 @@ private:
 // 反转链表--双指针法
 一个指向NULL，一个指向head
 
-    // 两两交换链表中的节点
-    设置虚拟头节点，遍历指针每次增加2；循环条件是下一个和下下一个不为NULL class Solution
-{
+// 两两交换链表中的节点
+设置虚拟头节点，遍历指针每次增加2；循环条件是下一个和下下一个不为NULL 
+class Solution{
 public:
     ListNode *swapPairs(ListNode *head)
     {
@@ -118,8 +118,8 @@ public:
 };
 
 // 删除倒数第n个节点--双指针法
-快指针先走n + 1步，后同时走直到快指针为NULL class Solution
-{
+快指针先走n + 1步，后同时走直到快指针为NULL 
+class Solution{
 public:
     ListNode *removeNthFromEnd(ListNode *head, int n)
     {
@@ -158,8 +158,8 @@ public:
 };
 
 // 环形链表找环入口--双指针法
-快指针每次走两步，慢指针每次走一步，两指针间隔每次只变1，一定会相遇。相遇时f = s + nb；f = 2s --> s = nb，再让fast指向头节点，同时移动两指针相遇时就是入口节点。 需要先判断是否无环 class Solution
-{
+快指针每次走两步，慢指针每次走一步，两指针间隔每次只变1，一定会相遇。相遇时f = s + nb；f = 2s --> s = nb，再让fast指向头节点，同时移动两指针相遇时就是入口节点。 需要先判断是否无环 
+class Solution{
 public:
     ListNode *detectCycle(ListNode *head)
     {
